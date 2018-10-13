@@ -1,0 +1,50 @@
+scrollbar, scrollbar *, scrollcorner {
+	-moz-appearance: none !important;
+	--scrollbar-width: 10px;
+    --scrollbar-height: var(--scrollbar-width);
+}
+
+scrollbar, scrollcorner  {
+    background: transparent !important;
+}
+scrollbar[orient="vertical"] {
+    width: var(--scrollbar-width) !important;
+    min-width: var(--scrollbar-width) !important;
+}
+scrollbar[orient="horizontal"] {
+    height: var(--scrollbar-height) !important;
+    min-height: var(--scrollbar-height) !important;
+}
+
+scrollbar thumb {
+	background: #3a3a3a !important;
+}
+scrollbar thumb:hover,
+scrollbar thumb:active {
+	background: #545454 !important;
+}
+
+scrollbar:inactive scrollbarbutton {
+    background-color: #444444 !important;
+}
+scrollbar scrollbarbutton:inactive {
+    background: #3a3a3a !important;
+}
+scrollbar scrollbarbutton:inactive {
+    background: #545454 !important;
+}
+scrollbar scrollbarbutton {
+    display: none !important;
+}
+
+After creating these two files, simply restart Firefox and you should immediately see it, hope this is helpful to you!
+
+edit: aware of the dumb typo on title
+
+edit: if you have a favorite color accent or want to make it match with your firefox theme, change the color value on
+
+}
+scrollbar thumb:hover,
+scrollbar thumb:active {
+	background: #545454 !important;
+}
