@@ -1,5 +1,6 @@
 /*Bookmark bar padding*/
-#PlacesToolbarItems .bookmark-item {
+#PlacesToolbarItems .bookmark-item
+{
   padding-top: 6px !important;
   padding-bottom: 6px !important;
   padding-left: 6px !important;
