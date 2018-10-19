@@ -1,9 +1,22 @@
-/*Bookmark bar separators*/
+/*Bookmark bar sparators*/
   #PlacesToolbarItems toolbarseparator
   {
     -moz-appearance: none !important;
-    /*Light version*/
-    /*border-left: 1px solid #dcdddd !important;*/
-    /*Dark version*/
-    border-left: 1px solid #5b5b5c !important;
+    border-image-slice: 1 !important;
+    border-inline-start-style: solid !important;
+    border-inline-start-width: 1px !important;
+  }
+  /*Light*/
+  #PlacesToolbarItems toolbarseparator:-moz-lwtheme-darktext
+  {
+    border-image-source: linear-gradient(rgba(0, 0, 0, 0) 4px, rgba(0, 0, 0, 0.1) 4px, 
+        rgba(0, 0, 0, 0.1) calc(-4px + 100%), rgba(0, 0, 0, 0) calc(-4px + 100%)) !important;
+    border-inline-start-color: rgb(24, 25, 26) !important;
+  }
+  /*Dark*/
+  #PlacesToolbarItems toolbarseparator:-moz-lwtheme-brighttext
+  {
+    border-image-source: linear-gradient(rgba(0, 0, 0, 0) 4px, rgba(255, 255, 255, 0.2) 4px, 
+        rgba(255, 255, 255, 0.2) calc(-4px + 100%), rgba(0, 0, 0, 0) calc(-4px + 100%)) !important;
+    border-inline-start-color: rgb(249, 249, 250) !important;
   }
