@@ -1,9 +1,9 @@
-/*Bookmark bar sparators*/
+/*Bookmark bar separators*/
   #PlacesToolbarItems toolbarseparator
   {
     -moz-appearance: none !important;
     /*Light version*/
-    /*border-right: 1px solid #dcdddd !important;*/
+    /*border-left: 1px solid #dcdddd !important;*/
     /*Dark version*/
-    border-right: 1px solid #5b5b5c !important;
+    border-left: 1px solid #5b5b5c !important;
   }
