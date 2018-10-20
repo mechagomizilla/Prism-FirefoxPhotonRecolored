@@ -1,4 +1,4 @@
-/*Bookmark bar sparators*/
+/*Theme-matching bookmark bar separators*/
   #PlacesToolbarItems toolbarseparator
   {
     -moz-appearance: none !important;
@@ -6,14 +6,12 @@
     border-inline-start-style: solid !important;
     border-inline-start-width: 1px !important;
   }
-  /*Light*/
   #PlacesToolbarItems toolbarseparator:-moz-lwtheme-darktext
   {
     border-image-source: linear-gradient(rgba(0, 0, 0, 0) 4px, rgba(0, 0, 0, 0.1) 4px, 
         rgba(0, 0, 0, 0.1) calc(-4px + 100%), rgba(0, 0, 0, 0) calc(-4px + 100%)) !important;
     border-inline-start-color: rgb(24, 25, 26) !important;
   }
-  /*Dark*/
   #PlacesToolbarItems toolbarseparator:-moz-lwtheme-brighttext
   {
     border-image-source: linear-gradient(rgba(0, 0, 0, 0) 4px, rgba(255, 255, 255, 0.2) 4px, 
