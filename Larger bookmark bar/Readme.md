@@ -1,3 +1,1 @@
-Makes the bookmarks of the personnal bar as big as Google Chrome and Opera's. This should go with the normal density layout by default.
-
-In my opinion, it goes well even with the compact layout.
+Makes the bookmarks of the personnal bar almost as big as Google Chrome and Opera's. They also scale with the UI density so that the compact density remains the same and the touch density makes them even bigger. The separators also have added margins so that they have more impact and scale accordingly with the rest of the toolbar.
