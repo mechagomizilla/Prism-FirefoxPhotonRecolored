@@ -1,9 +1,10 @@
 /*Bookmark bar spacing*/
   toolbarbutton.bookmark-item:not(.subviewbutton) {
-    margin: 0 1px !important;
+    margin: 0 1px 1px 1px !important;
     padding: 5px !important;
   }
   :root[uidensity=compact] toolbarbutton.bookmark-item:not(.subviewbutton) {
+    margin: 0 1px !important;
     padding: 1px 4px !important;
   }
   :root[uidensity=touch] toolbarbutton.bookmark-item:not(.subviewbutton) {
@@ -11,11 +12,11 @@
   }
   /*Added margins to the separators that are equal in size to the buttons' horizontal padding*/
   #PlacesToolbarItems toolbarseparator {
-    margin: 0 5px !important;
+    margin: 0 5px 1px 5px !important;
   }
   :root[uidensity=compact] #PlacesToolbarItems toolbarseparator {
     margin: 0 4px !important;
   }
   :root[uidensity=touch] #PlacesToolbarItems toolbarseparator {
-    margin: 0 8px !important;
+    margin: 0 8px 1px 8px !important;
   }
