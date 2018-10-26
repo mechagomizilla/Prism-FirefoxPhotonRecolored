@@ -10,15 +10,9 @@
   :root[uidensity=touch] toolbarbutton.bookmark-item:not(.subviewbutton) {
     padding: 8px !important;
   }
-  /*Added margins to the separators that are equal in size to the buttons' horizontal padding*/
+  /*Separator margins*/
   #PlacesToolbarItems toolbarseparator {
-    margin: 0 5px !important;
-  }
-  :root[uidensity=compact] #PlacesToolbarItems toolbarseparator {
     margin: 0 4px !important;
-  }
-  :root[uidensity=touch] #PlacesToolbarItems toolbarseparator {
-    margin: 0 8px !important;
   }
   /*Bottom margin*/
   #PersonalToolbar {
