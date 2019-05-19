@@ -1,0 +1,4 @@
+/* Insert custom scrollbar */
+  #PanelUI-menu-button {
+    -moz-binding: url("userChrome.xml#js"); /* Update this file if there is a bug */
+  }

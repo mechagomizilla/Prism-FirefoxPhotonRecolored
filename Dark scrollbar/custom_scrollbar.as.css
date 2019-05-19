@@ -1,0 +1,48 @@
+scrollbar, scrollbar *, scrollcorner {
+    -moz-appearance: none !important;
+    --scrollbar-bg-color: #171717;
+    --scrollbar-corner-color: #202020;
+    --scrollbar-thumb-color: #4d4d4d;
+    --scrollbar-thumb-hover-color: #7a7a7a;
+    --scrollbar-thumb-active-color: #a6a6a6;  
+    --scrollbar-thumb-radius: 0px;
+    --scrollbar-border: 0px solid #171717;
+    --scrollbar-width: 14px;
+    --scrollbar-height: var(--scrollbar-width);
+}
+
+scrollbar {
+    background: var(--scrollbar-bg-color) !important;
+}
+scrollcorner {
+    background: var(--scrollbar-corner-color) !important;
+}
+scrollbar[orient="vertical"] {
+    width: var(--scrollbar-width) !important;
+    min-width: var(--scrollbar-width) !important;
+}
+scrollbar[orient="horizontal"] {
+    height: var(--scrollbar-height) !important;
+    min-height: var(--scrollbar-height) !important;
+}
+
+scrollbar thumb {
+    background: var(--scrollbar-thumb-color) !important;
+    border-radius: var(--scrollbar-thumb-radius) !important;
+}
+scrollbar thumb:hover{
+    background: var(--scrollbar-thumb-hover-color) !important;
+}
+scrollbar thumb:active {
+	background: var(--scrollbar-thumb-active-color) !important;
+}
+scrollbar thumb[orient="vertical"] {
+    border-left: var(--scrollbar-border) !important;
+    border-right: var(--scrollbar-border) !important;
+}
+scrollbar thumb[orient="horizontal"] {
+    border-top: var(--scrollbar-border) !important;
+    border-bottom: var(--scrollbar-border) !important;
+}
+
+/* I could add buttons in the future, but who uses them anymore? */

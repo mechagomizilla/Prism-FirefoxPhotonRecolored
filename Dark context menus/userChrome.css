@@ -1,6 +1,4 @@
 /* Dark context menus */
-/* (some credit to MrOtherGuy at https://github.com/MrOtherGuy/firefox-csshacks) 
-   I tweaked it a bit to be more aligned with the rest of the UI */
 
 :root{
   --uc-menu-bkgnd: rgb(74,74,79);
