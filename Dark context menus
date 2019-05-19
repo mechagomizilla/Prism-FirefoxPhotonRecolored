@@ -1,0 +1,65 @@
+/* Dark context menus */
+/* (some credit to MrOtherGuy at https://github.com/MrOtherGuy/firefox-csshacks) 
+   I tweaked it a bit to be more aligned with the rest of the UI */
+
+:root{
+  --uc-menu-bkgnd: rgb(74,74,79);
+  --uc-menu-color: rgb(230,230,230);
+  --uc-menu-dimmed: rgba(255,255,255,0.1);
+  --uc-menu-disabled: rgb(162,162,164);
+  --uc-menu-separator: rgb(92,92,97);
+  --uc-menu-border: rgb(39,39,43);
+}
+
+menupopup,
+menu,
+menuitem{ -moz-appearance: none !important; }
+
+menuitem,
+menu{ min-height: 1.8em }
+
+menupopup:not(.PanelUI-subView),
+#main-menubar > menu > menupopup,
+#context-navigation{
+  color: var(--uc-menu-color) !important;
+  padding: 2px;
+  background-color: var(--uc-menu-bkgnd) !important;
+  border-color: var(--uc-menu-border) !important;
+}
+
+#BMB_bookmarksPopup menupopup[placespopup="true"]{
+  background: transparent !important;
+}
+
+menuseparator:not(.PanelUI-subView) {
+  -moz-appearance: none !important;
+  margin-left: 2.3em !important;
+  height: 1px !important;
+  border: none !important;
+  background: var(--uc-menu-separator) !important;
+  padding: 0 !important
+}
+
+treechildren::-moz-tree-separator {
+  border-color: var(--uc-menu-separator) !important;
+  border-bottom: none !important;
+}
+
+.PanelUI-subView menuseparator{
+  margin-left: 0 !important;
+}
+
+.PanelUI-subView menuseparator.small-separator{
+  margin-left: 10px !important;
+}
+
+menu:hover,
+menu[_moz-menuactive],
+menu[open],
+menuitem:hover,
+menuitem[_moz-menuactive]{ background-color: var(--uc-menu-dimmed) !important; color: inherit !important; }
+
+menu[disabled="true"],
+menuitem[disabled="true"]{ color: var(--uc-menu-disabled) !important; }
+
+menu:not(.subviewbutton) > .menu-right{ filter: invert(1) }
