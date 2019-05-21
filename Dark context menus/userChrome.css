@@ -14,15 +14,23 @@ menu,
 menuitem{ -moz-appearance: none !important; }
 
 menuitem,
-menu{ min-height: 1.8em }
+menu{ min-height: 1.8em; }
 
 menupopup:not(.PanelUI-subView),
 #main-menubar > menu > menupopup,
 #context-navigation{
   color: var(--uc-menu-color) !important;
-  padding: 3px 0px !important;
   background-color: var(--uc-menu-bkgnd) !important;
   border-color: var(--uc-menu-border) !important;
+}
+
+menupopup:not(.PanelUI-subView) {
+  padding: 3px 0px !important;
+}
+
+menupopup menuitem:not(.subviewbutton), menupopup menu:not(.subviewbutton), 
+#contentAreaContextMenu menuitem, #contentAreaContextMenu menu {
+  padding: 2px 10px !important;
 }
 
 #context-navigation{
@@ -39,9 +47,9 @@ menupopup:not(.PanelUI-subView),
 
 menuseparator:not(.PanelUI-subView) {
   -moz-appearance: none !important;
-  margin-left: 30px !important;
-  margin-top: 1px !important;
-  margin-bottom: 1px !important;
+  margin-left: 33px !important;
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
   height: 1px !important;
   border: none !important;
   background: var(--uc-menu-separator) !important;
@@ -61,11 +69,11 @@ treechildren::-moz-tree-separator {
   margin-left: 10px !important;
 }
 
-menu:hover,
-menu[_moz-menuactive],
-menu[open],
-menuitem:hover,
-menuitem[_moz-menuactive]{ background-color: var(--uc-menu-dimmed) !important; color: inherit !important; }
+menu:hover:not(.panel-subview-footer),
+menu[_moz-menuactive]:not(.panel-subview-footer),
+menu[open]:not(.panel-subview-footer),
+menuitem:hover:not(.panel-subview-footer),
+menuitem[_moz-menuactive]:not(.panel-subview-footer){ background-color: var(--uc-menu-dimmed) !important; color: inherit !important; }
 
 menu[disabled="true"],
 menuitem[disabled="true"]{ color: var(--uc-menu-disabled) !important; }
