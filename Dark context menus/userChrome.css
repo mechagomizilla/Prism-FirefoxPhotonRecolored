@@ -30,7 +30,7 @@ menupopup:not(.PanelUI-subView) {
 
 menupopup menuitem:not(.subviewbutton), menupopup menu:not(.subviewbutton), 
 #contentAreaContextMenu menuitem, #contentAreaContextMenu menu {
-  padding: 2px 10px !important;
+  padding: 2px 7px !important;
 }
 
 #context-navigation{
@@ -47,7 +47,7 @@ menupopup menuitem:not(.subviewbutton), menupopup menu:not(.subviewbutton),
 
 menuseparator:not(.PanelUI-subView) {
   -moz-appearance: none !important;
-  margin-left: 33px !important;
+  margin-left: 35px !important;
   margin-top: 3px !important;
   margin-bottom: 3px !important;
   height: 1px !important;
