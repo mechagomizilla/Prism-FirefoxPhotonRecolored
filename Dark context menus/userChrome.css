@@ -20,9 +20,17 @@ menupopup:not(.PanelUI-subView),
 #main-menubar > menu > menupopup,
 #context-navigation{
   color: var(--uc-menu-color) !important;
-  padding: 2px;
+  padding: 3px 0px !important;
   background-color: var(--uc-menu-bkgnd) !important;
   border-color: var(--uc-menu-border) !important;
+}
+
+#context-navigation{
+  padding: 0px !important;
+}
+
+.menu-iconic-left, .menu-iconic-text {
+  color: var(--uc-menu-color) !important;
 }
 
 #BMB_bookmarksPopup menupopup[placespopup="true"]{
@@ -31,7 +39,9 @@ menupopup:not(.PanelUI-subView),
 
 menuseparator:not(.PanelUI-subView) {
   -moz-appearance: none !important;
-  margin-left: 2.3em !important;
+  margin-left: 30px !important;
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
   height: 1px !important;
   border: none !important;
   background: var(--uc-menu-separator) !important;
@@ -43,7 +53,7 @@ treechildren::-moz-tree-separator {
   border-bottom: none !important;
 }
 
-.PanelUI-subView menuseparator{
+.PanelUI-subView menuseparator, #context-sep-navigation{
   margin-left: 0 !important;
 }
 
