@@ -20,7 +20,7 @@ menupopup:not(.PanelUI-subView),
 #main-menubar > menu > menupopup,
 #context-navigation{
   color: var(--uc-menu-color) !important;
-  background-color: var(--uc-menu-bkgnd) !important;
+  background: var(--uc-menu-bkgnd) !important;
   border-color: var(--uc-menu-border) !important;
 }
 
