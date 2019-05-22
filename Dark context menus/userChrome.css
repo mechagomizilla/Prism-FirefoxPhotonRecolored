@@ -68,7 +68,7 @@ menupopup menuitem:not(.subviewbutton), menupopup menu:not(.subviewbutton),
 }
 
 .openintabs-menuitem {
-  margin-left: -25px;
+  margin-left: -26px;
 }
 
 #BMB_bookmarksPopup menupopup[placespopup="true"]{
