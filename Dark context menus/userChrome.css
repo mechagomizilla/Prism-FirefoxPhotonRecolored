@@ -25,6 +25,10 @@ menu{
   line-height: 16px !important;
 }
 
+.customization-uidensity-menuitem {
+  max-height: none !important;
+}
+
 .menu-accel, .menu-iconic-accel, .menu-text, .menu-iconic-text {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
