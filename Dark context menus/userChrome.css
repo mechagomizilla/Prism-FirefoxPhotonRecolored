@@ -21,14 +21,13 @@ menu{
 .bookmark-item,
 .menu-iconic,
 .menuitem-iconic {
-  min-height: 24px !important;
   max-height: 24px !important;
   line-height: 16px !important;
 }
 
 .menu-accel, .menu-iconic-accel, .menu-text, .menu-iconic-text {
-  margin: 0 !important;
-  padding: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 #context-navigation .menuitem-iconic {
@@ -58,6 +57,14 @@ menupopup menuitem:not(.subviewbutton), menupopup menu:not(.subviewbutton),
 
 .menu-iconic-left, .menu-iconic-text {
   color: var(--uc-menu-color) !important;
+}
+
+.bookmark-item .menu-iconic-left{
+  margin-right: -5px;
+}
+
+.openintabs-menuitem {
+  margin-left: -25px;
 }
 
 #BMB_bookmarksPopup menupopup[placespopup="true"]{
