@@ -28,7 +28,7 @@ menu{
 
 .menu-accel, .menu-iconic-accel, .menu-text, .menu-iconic-text {
   margin: 0 !important;
-  padding: 1px 0 !important;
+  padding: 0 !important;
 }
 
 #context-navigation .menuitem-iconic {
