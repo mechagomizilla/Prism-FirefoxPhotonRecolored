@@ -25,10 +25,6 @@ menu{
   line-height: 16px !important;
 }
 
-.customization-uidensity-menuitem {
-  max-height: none !important;
-}
-
 .menu-accel, .menu-iconic-accel, .menu-text, .menu-iconic-text {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -68,7 +64,7 @@ menupopup menuitem:not(.subviewbutton), menupopup menu:not(.subviewbutton),
 }
 
 .openintabs-menuitem {
-  margin-left: -26px;
+  margin-left: -27px;
 }
 
 #BMB_bookmarksPopup menupopup[placespopup="true"]{
@@ -126,3 +122,7 @@ menu[disabled="true"],
 menuitem[disabled="true"]{ color: var(--uc-menu-disabled) !important; }
 
 menu:not(.subviewbutton) > .menu-right{ filter: invert(1) }
+
+.customization-uidensity-menuitem {
+    max-height: none !important;
+}

@@ -1,0 +1,9 @@
+  /* Square toolbar buttons */
+  :root {
+    --toolbarbutton-border-radius: 0 !important;
+  }
+  
+  /* Dark url bar */
+  #urlbar {
+    background: #212121 !important;
+  }
