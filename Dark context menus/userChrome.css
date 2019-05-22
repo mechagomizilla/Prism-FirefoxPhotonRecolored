@@ -26,6 +26,11 @@ menu{
   line-height: 16px !important;
 }
 
+.menu-accel, .menu-iconic-accel, .menu-text, .menu-iconic-text {
+  margin: 0 !important;
+  padding: 1px 0 !important;
+}
+
 #context-navigation .menuitem-iconic {
   max-height: none !important;
 }
@@ -83,6 +88,23 @@ treechildren::-moz-tree-separator {
   margin-right: 10px !important;
 }
 
+.panel-subview-body {
+    padding: 4px 0 !important;
+}
+
+#widget-overflow-mainView > .panel-subview-body > toolbarseparator, 
+.PanelUI-subView menuseparator, 
+.PanelUI-subView toolbarseparator, 
+.cui-widget-panelview menuseparator, 
+.cui-widget-panel toolbarseparator {
+    margin: 4px 0 !important;
+}
+
+.PanelUI-subView toolbarseparator[orient="vertical"] {
+    margin-inline-start: 6px !important;
+    margin-inline-end: 7px !important;
+}
+
 menu:hover:not(.panel-subview-footer),
 menu[_moz-menuactive]:not(.panel-subview-footer),
 menu[open]:not(.panel-subview-footer),
@@ -93,27 +115,3 @@ menu[disabled="true"],
 menuitem[disabled="true"]{ color: var(--uc-menu-disabled) !important; }
 
 menu:not(.subviewbutton) > .menu-right{ filter: invert(1) }
-
-/* Bookmark bar spacing */
-  toolbarbutton.bookmark-item:not(.subviewbutton) {
-    margin: 0 1px !important;
-    padding: 5px !important;
-  }
-  :root[uidensity=compact] toolbarbutton.bookmark-item:not(.subviewbutton) {
-    margin: 0 1px !important;
-    padding: 1px 4px !important;
-  }
-  :root[uidensity=touch] toolbarbutton.bookmark-item:not(.subviewbutton) {
-    padding: 8px !important;
-  }
-  /*Separator margins*/
-  #PlacesToolbarItems toolbarseparator {
-    margin: 0 4px !important;
-  }
-  /*Bottom margin*/
-  #PersonalToolbar {
-    padding: 0 6px 3px !important;
-  }
-  :root[uidensity=compact] #PersonalToolbar {
-    padding: 0 6px 2px !important;
-  }
