@@ -59,14 +59,6 @@ menupopup menuitem:not(.subviewbutton), menupopup menu:not(.subviewbutton),
   color: var(--uc-menu-color) !important;
 }
 
-.bookmark-item .menu-iconic-left{
-  margin-right: -5px;
-}
-
-.openintabs-menuitem {
-  margin-left: -27px;
-}
-
 #BMB_bookmarksPopup menupopup[placespopup="true"]{
   background: transparent !important;
 }
