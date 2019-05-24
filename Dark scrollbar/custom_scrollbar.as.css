@@ -1,13 +1,13 @@
 scrollbar, scrollbar *, scrollcorner {
     -moz-appearance: none !important;
-    --scrollbar-bg-color: #171717;
-    --scrollbar-corner-color: #202020;
-    --scrollbar-thumb-color: #4d4d4d;
-    --scrollbar-thumb-hover-color: #7a7a7a;
-    --scrollbar-thumb-active-color: #a6a6a6;  
+    --scrollbar-bg-color: rgb(12,12,13);
+    --scrollbar-corner-color: rgb(39, 39, 43);
+    --scrollbar-thumb-color: hsla(0,0%,70%,.4);
+    --scrollbar-thumb-hover-color: rgba(249,249,250,.4);
+    --scrollbar-thumb-active-color: rgba(249,249,250,.5);  
     --scrollbar-thumb-radius: 0px;
-    --scrollbar-border: 0px solid #171717;
-    --scrollbar-width: 14px;
+    --scrollbar-border: 0px solid rgb(12,12,13);
+    --scrollbar-width: 17px;
     --scrollbar-height: var(--scrollbar-width);
 }
 
