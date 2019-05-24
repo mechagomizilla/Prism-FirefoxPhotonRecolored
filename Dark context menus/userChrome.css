@@ -52,7 +52,14 @@ menu[open]:not(.panel-subview-footer),
 menuitem:hover:not(.panel-subview-footer),
 menuitem[_moz-menuactive]:not(.panel-subview-footer){ background-color: var(--uc-menu-dimmed) !important; color: inherit !important; }
 
-menu:not(.subviewbutton) > .menu-right{ filter: invert(1) }
+menu:not(.subviewbutton) > .menu-right { 
+  filter: invert(1);
+}
+
+menu:not(.subviewbutton)[disabled="true"] > .menu-right {
+  filter: none;
+  color: var(--uc-menu-disabled) !important;
+}
 
 .menu-iconic-left[disabled="true"], 
 .menu-iconic-text[disabled="true"], 
