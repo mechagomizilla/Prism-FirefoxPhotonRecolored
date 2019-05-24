@@ -57,11 +57,10 @@ menuitem[_moz-menuactive]:not(.panel-subview-footer) {
 }
 
 menu:not(.subviewbutton) > .menu-right { 
-  filter: invert(1);
+  color: var(uc-menu-color) !important;
 }
 
 menu:not(.subviewbutton)[disabled="true"] > .menu-right {
-  filter: none;
   color: var(--uc-menu-disabled) !important;
 }
 
