@@ -1,20 +1,22 @@
 /* Dark context menus */
 
-:root{
+:root {
   --uc-menu-bkgnd: rgb(74,74,79);
-  --uc-menu-color: rgb(230,230,230);
-  --uc-menu-dimmed: rgba(255,255,255,0.1);
-  --uc-menu-disabled: rgb(162,162,164);
-  --uc-menu-separator: rgb(92,92,97);
+  --uc-menu-color: rgb(249,249,250);
+  --uc-menu-dimmed: rgba(249,249,250,0.1);
+  --uc-menu-disabled: rgba(249,249,250,0.5);
+  --uc-menu-separator: rgba(249,249,250,0.1);
   --uc-menu-border: rgb(39,39,43);
 }
 
 menupopup,
 menu,
-menuitem{ -moz-appearance: none !important; }
+menuitem { 
+  -moz-appearance: none !important; 
+}
 
 menuitem,
-menu{ 
+menu { 
   min-height: 1.8em;
 }
 
@@ -36,7 +38,7 @@ menu{
 
 menupopup:not(.PanelUI-subView),
 #main-menubar > menu > menupopup,
-#context-navigation{
+#context-navigation {
   color: var(--uc-menu-color) !important;
   background: var(--uc-menu-bkgnd) !important;
   border-color: var(--uc-menu-border) !important;
@@ -50,7 +52,9 @@ menu:hover:not(.panel-subview-footer),
 menu[_moz-menuactive]:not(.panel-subview-footer),
 menu[open]:not(.panel-subview-footer),
 menuitem:hover:not(.panel-subview-footer),
-menuitem[_moz-menuactive]:not(.panel-subview-footer){ background-color: var(--uc-menu-dimmed) !important; color: inherit !important; }
+menuitem[_moz-menuactive]:not(.panel-subview-footer) { 
+  background-color: var(--uc-menu-dimmed) !important; color: inherit !important; 
+}
 
 menu:not(.subviewbutton) > .menu-right { 
   filter: invert(1);
@@ -74,7 +78,7 @@ menuitem[disabled="true"],
 .menu-iconic[disabled="true"][_moz-menuactive],
 .menuitem-iconic[disabled="true"][_moz-menuactive],
 menu[disabled="true"][_moz-menuactive],
-menuitem[disabled="true"][_moz-menuactive]{
+menuitem[disabled="true"][_moz-menuactive] {
   color: var(--uc-menu-disabled) !important;
 }
 
@@ -87,7 +91,7 @@ menupopup menuitem:not(.subviewbutton), menupopup menu:not(.subviewbutton),
   padding: 4px 8px !important;
 }
 
-#context-navigation{
+#context-navigation {
   padding: 0px !important;
 }
 
@@ -109,12 +113,12 @@ treechildren::-moz-tree-separator {
   border-bottom: none !important;
 }
 
-.PanelUI-subView menuseparator, #context-sep-navigation{
+.PanelUI-subView menuseparator, #context-sep-navigation {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
 
-.PanelUI-subView menuseparator.small-separator{
+.PanelUI-subView menuseparator.small-separator {
   margin-left: 10px !important;
   margin-right: 10px !important;
 }
