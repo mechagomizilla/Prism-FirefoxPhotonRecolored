@@ -53,14 +53,16 @@ menu[_moz-menuactive]:not(.panel-subview-footer),
 menu[open]:not(.panel-subview-footer),
 menuitem:hover:not(.panel-subview-footer),
 menuitem[_moz-menuactive]:not(.panel-subview-footer) { 
-  background-color: var(--uc-menu-dimmed) !important; color: inherit !important; 
+  background-color: var(--uc-menu-dimmed) !important;
+  color: inherit !important; 
 }
 
 menu:not(.subviewbutton) > .menu-right { 
-  color: var(uc-menu-color) !important;
+  filter: invert(1);
 }
 
 menu:not(.subviewbutton)[disabled="true"] > .menu-right {
+  filter: none;
   color: var(--uc-menu-disabled) !important;
 }
 
@@ -137,6 +139,12 @@ treechildren::-moz-tree-separator {
 .PanelUI-subView toolbarseparator[orient="vertical"] {
     margin-inline-start: 6px !important;
     margin-inline-end: 7px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+toolbaritem#appMenu-fxa-container.toolbaritem-combined-buttons {
+    margin-inline-end: 0px !important;
 }
 
 .customization-uidensity-menuitem {
