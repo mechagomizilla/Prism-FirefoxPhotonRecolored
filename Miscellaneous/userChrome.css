@@ -7,3 +7,13 @@
 #urlbar {
   background: rgb(37,37,39) !important;
 }
+
+/* Ubuntu orange focus color */
+
+.tab-line {
+  background-color: #E95420 !important;
+}
+
+:root {
+  --toolbar-field-focus-border-color: #E95420 !important;
+}
