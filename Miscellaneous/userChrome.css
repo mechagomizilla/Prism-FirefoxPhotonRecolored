@@ -21,7 +21,8 @@
   --toolbar-field-focus-border-color: var(--browser-ui-highlight-color) !important;
 }
 
-.tab-line {
+.tab-line[multiselected],
+.tab-line[selected=true] {
   background-color: var(--browser-ui-highlight-color) !important;
 }
 
