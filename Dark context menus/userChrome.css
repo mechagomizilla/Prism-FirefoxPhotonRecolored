@@ -25,6 +25,7 @@ menu {
 .menuitem-iconic {
   max-height: 24px !important;
   line-height: 16px !important;
+  border: none !important;
 }
 
 .menu-accel, .menu-iconic-accel, .menu-text, .menu-iconic-text {
