@@ -1,33 +1,7 @@
-/* Square toolbar buttons */
-
-:root {
-  --toolbarbutton-border-radius: 0 !important;
-}
-
-/*-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-*/
-
 /* Darker url bar */
 
 #urlbar {
   background: rgb(37,37,39) !important;
-}
-
-/*-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-*/
-
-/* Ubuntu orange focus color */
-
-:root {
-  --browser-ui-highlight-color: #E95420;
-  --toolbar-field-focus-border-color: var(--browser-ui-highlight-color) !important;
-}
-
-.tab-line[multiselected],
-.tab-line[selected=true] {
-  background-color: var(--browser-ui-highlight-color) !important;
-}
-
-#tabbrowser-tabs {
-  --tab-loading-fill: var(--browser-ui-highlight-color) !important;
 }
 
 /*-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-*/
