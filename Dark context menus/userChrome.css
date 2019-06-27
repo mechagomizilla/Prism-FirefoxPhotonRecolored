@@ -151,3 +151,8 @@ toolbaritem#appMenu-fxa-container.toolbaritem-combined-buttons {
 .customization-uidensity-menuitem {
     max-height: none !important;
 }
+
+toolbarbutton.subviewbutton.highlight.subviewbutton-iconic.bookmark-item {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
