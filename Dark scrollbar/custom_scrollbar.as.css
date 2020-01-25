@@ -7,7 +7,7 @@ scrollbar, scrollbar *, scrollcorner {
     --scrollbar-thumb-active-color: rgba(249,249,250,.5);  
     --scrollbar-thumb-radius: 0px;
     --scrollbar-border: 0px solid rgb(12,12,13);
-    --scrollbar-width: 17px;
+    --scrollbar-width: 14px;
     --scrollbar-height: var(--scrollbar-width);
 }
 
