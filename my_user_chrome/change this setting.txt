@@ -1,0 +1,1 @@
+toolkit.legacyUserProfileCustomizations.stylesheets = true
