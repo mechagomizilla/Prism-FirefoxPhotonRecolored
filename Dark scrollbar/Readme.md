@@ -12,4 +12,6 @@ The default colors are matched with Windows 10's dark theme (you can change them
 
 ## Credits
 
-Credit for the XML file / JS tweak to Aris-T2 at [https://github.com/Aris-t2/CustomJSforFx](https://github.com/Aris-t2/CustomJSforFx) (see method 3 - go there if anything is broken in a future update - working as of Firefox 72).
+Credit for the XML file / JS tweak to [Aris-T2](https://github.com/Aris-t2/CustomJSforFx) (see method 3 - go there if anything is broken in a future update - working as of Firefox 72).
+
+Credit for the JS implementation of the CSS scrollbar to [Endor8](https://github.com/Endor8/userChrome.js) (see floating scrollbar).
