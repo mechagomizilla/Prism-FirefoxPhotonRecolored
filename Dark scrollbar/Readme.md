@@ -8,7 +8,7 @@
 
 That's it. If you want to add more userscript files, you have to list them in the userChrome JS file.
 
-The default colors are matched with Windows 10's dark theme (you can change them yourself by editing the file).
+You can change the colors yourself by changing the CSS variables in the file.
 
 ## Credits
 
