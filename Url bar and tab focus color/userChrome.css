@@ -1,15 +1,20 @@
 /* Url bar and tab focus color */
 
 :root {
-    --browser-ui-highlight-color: #E95420;
-    --toolbar-field-focus-border-color: var(--browser-ui-highlight-color) !important;
-  }
+  --browser-ui-highlight-color: #E95420;
+  --toolbar-field-focus-border-color: var(--browser-ui-highlight-color) !important;
+}
   
-  #tabbrowser-tabs {
-    --tab-loading-fill: var(--browser-ui-highlight-color) !important;
-    --tab-line-color: var(--browser-ui-highlight-color) !important;
-  }
+#tabbrowser-tabs {
+  --tab-loading-fill: var(--browser-ui-highlight-color) !important;
+  --tab-line-color: var(--browser-ui-highlight-color) !important;
+}
   
-  .tab-throbber[progress]:not([selected=true])::before {
-    fill: var(--browser-ui-highlight-color) !important;
-  }
+.tab-throbber[progress]:not([selected=true])::before {
+  fill: var(--browser-ui-highlight-color) !important;
+}
+
+#urlbar:not(.megabar), #urlbar.megabar > #urlbar-background, #searchbar {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: none !important;
+}
