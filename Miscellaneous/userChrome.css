@@ -1,7 +1,7 @@
 /* Darker url bar */
 
-#urlbar {
-  background: rgb(37,37,39) !important;
+#urlbar:-moz-lwtheme > #urlbar-background, #navigator-toolbox #searchbar:-moz-lwtheme {
+  background-color: rgb(37,37,39) !important;
 }
 
 /*-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-*/
