@@ -13,8 +13,3 @@
 .tab-throbber[progress]:not([selected=true])::before {
   fill: var(--browser-ui-highlight-color) !important;
 }
-
-#urlbar:not(.megabar), #urlbar.megabar > #urlbar-background, #searchbar {
-  background-color: rgba(0, 0, 0, 0) !important;
-  border: none !important;
-}
