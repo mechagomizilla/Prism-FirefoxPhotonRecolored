@@ -20,3 +20,33 @@
   background-color: rgba(0, 0, 0, 0) !important;
   border: none !important;
 }
+
+/*-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-*/
+
+/* Deactivate url bar outline when out of focus */
+
+#urlbar:not([focused="true"]):-moz-lwtheme > #urlbar-background, #navigator-toolbox #searchbar:not(:focus-within):-moz-lwtheme {
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+/*-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-*/
+
+/* F***ing back button */
+
+:root:not([uidensity=compact]) #back-button {
+  padding-inline-start: 3px !important;
+}
+:root:not([uidensity=compact]) #back-button > .toolbarbutton-icon {
+  background-color: unset !important;
+  border: unset !important;
+  padding: var(--toolbarbutton-inner-padding) !important;
+  border-radius: var(--toolbarbutton-border-radius) !important;
+  width: 28px !important;
+  height: 28px !important;
+}
+:root:not([uidensity="compact"]) #back-button:hover:not([disabled]) > .toolbarbutton-icon {
+  background-color: var(--toolbarbutton-hover-background) !important;
+}
+:root:not([uidensity="compact"]) #back-button:active:not([disabled]) > .toolbarbutton-icon {
+  background-color: var(--toolbarbutton-active-background) !important;
+}
