@@ -1,1 +1,0 @@
-The colors are currently set to Ubuntu orange instead of blue. It doesn't change the whole UI, just the ones visible on the first level of the UI.
