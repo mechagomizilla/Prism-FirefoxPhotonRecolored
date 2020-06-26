@@ -49,12 +49,14 @@
 
   menupopup,
   menu,
-  menuitem {
+  menuitem,
+  menucaption {
     -moz-appearance: none !important;
   }
 
+  menu,
   menuitem,
-  menu {
+  menucaption {
     min-height: 1.8em;
   }
 
@@ -69,7 +71,8 @@
   .menu-accel,
   .menu-iconic-accel,
   .menu-text,
-  .menu-iconic-text {
+  .menu-iconic-text,
+  .menu-iconic-highlightable-text {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
@@ -80,14 +83,16 @@
 
   menupopup:not(.PanelUI-subView),
   #main-menubar>menu>menupopup,
-  #context-navigation {
+  #context-navigation,
+  menucaption {
     color: var(--uc-menu-color) !important;
     background: var(--uc-menu-bkgnd) !important;
     border-color: var(--uc-menu-border) !important;
   }
 
   .menu-iconic-left,
-  .menu-iconic-text {
+  .menu-iconic-text,
+  .menu-iconic-highlightable-text {
     color: var(--uc-menu-color) !important;
   }
 
@@ -111,17 +116,20 @@
 
   .menu-iconic-left[disabled="true"],
   .menu-iconic-text[disabled="true"],
+  .menu-iconic-highlightable-text[disabled="true"],
   .bookmark-item[disabled="true"],
   .menu-iconic[disabled="true"],
   .menuitem-iconic[disabled="true"],
   menu[disabled="true"],
   menuitem[disabled="true"],
+  menucaption[disabled="true"],
   .menu-iconic-left[disabled="true"][_moz-menuactive],
   .menu-iconic-text[disabled="true"][_moz-menuactive],
   .bookmark-item[disabled="true"][_moz-menuactive],
   .menu-iconic[disabled="true"][_moz-menuactive],
   .menuitem-iconic[disabled="true"][_moz-menuactive],
   menu[disabled="true"][_moz-menuactive],
+  menucaption[disabled="true"][_moz-menuactive],
   menuitem[disabled="true"][_moz-menuactive] {
     color: var(--uc-menu-disabled) !important;
   }
