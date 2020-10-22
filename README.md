@@ -9,3 +9,5 @@ Interface tweaks for Firefox Quantum
 *Everything works perfectly as of Firefox 83.*
 
 NB: Be careful if you want to use just a few elements of my theme. I didn't take the time to make it perfectly modular and only a few elements currently work with the light theme, so there might be a lot of testing to do on your part so that everything keeps working.
+
+PS: I made a darker, cleaner theme. Since I did it rather quickly, I didn't bother to clean up the code too much. Sorry in advance. I also won't be maintaining two themes at a time since I'm doing this for myself. You can still find the old theme, but it's up to you to piece it together with the new theme if it ever breaks.
