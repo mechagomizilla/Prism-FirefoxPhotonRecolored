@@ -96,16 +96,19 @@
     --arrowpanel-border-color: rgba(249, 249, 250, 0.1) !important;
   }
   
-  .subviewbutton.panel-subview-footer {
+  .subviewbutton.panel-subview-footer, .panel-footer {
     background: var(--arrowpanel-background) !important;
   }
   
-  .subviewbutton.panel-subview-footer:hover {
+  menuitem.panel-subview-footer:not(:is([disabled], :active))[_moz-menuactive], 
+  .subviewbutton.panel-subview-footer:not(:is([disabled], [open], :active)):is(:hover, :focus) {
     background: var(--arrowpanel-dimmed) !important;
   }
   
-  .subviewbutton.panel-subview-footer:active {
+  menuitem.panel-subview-footer:not([disabled])[_moz-menuactive]:active, 
+  .subviewbutton.panel-subview-footer:not([disabled]):is([open], :hover:active) {
     background: var(--arrowpanel-dimmed-further) !important;
+    box-shadow: none !important;
   }
 
   menupopup,
