@@ -6,6 +6,6 @@ Interface tweaks for Firefox Quantum
 3. Change whatever values you want.
 4. Restart Firefox and that's it!
 
-*Everything works perfectly as of Firefox 78.*
+*Everything works perfectly as of Firefox 83.*
 
 NB: Be careful if you want to use just a few elements of my theme. I didn't take the time to make it perfectly modular and only a few elements currently work with the light theme, so there might be a lot of testing to do on your part so that everything keeps working.
