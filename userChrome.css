@@ -40,7 +40,7 @@
   }
   
   #navigator-toolbox:-moz-lwtheme {
-    --tabs-border-color: rgba(0,0,0,0) !important;
+    --tabs-border-color: var(--toolbar-bgcolor) !important;
   }
   
   /* Url bar and tab focus color */
