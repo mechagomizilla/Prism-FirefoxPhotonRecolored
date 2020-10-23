@@ -11,6 +11,10 @@
     --chrome-content-separator-color: rgb(43,43,52) !important;
   }
   
+  #TabsToolbar[brighttext] .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]):not([multiselected]) {
+    background-color: rgba(43,43,52,.6) !important;
+  }
+  
   .findbar-find-previous, .findbar-find-next{
     background: var(--lwt-toolbar-field-background-color) !important;
   }
@@ -42,6 +46,7 @@
   #navigator-toolbox:-moz-lwtheme {
     --tabs-border-color: var(--toolbar-bgcolor) !important;
   }
+
   
   /* Url bar and tab focus color */
 
