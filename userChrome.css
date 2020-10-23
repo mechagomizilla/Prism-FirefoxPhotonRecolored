@@ -12,7 +12,7 @@
   }
   
   #TabsToolbar[brighttext] .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]):not([multiselected]) {
-    background-color: rgba(43,43,52,.6) !important;
+    background-color: rgba(32, 32, 39,.5) !important;
   }
   
   .findbar-find-previous, .findbar-find-next{
@@ -46,7 +46,6 @@
   #navigator-toolbox:-moz-lwtheme {
     --tabs-border-color: var(--toolbar-bgcolor) !important;
   }
-
   
   /* Url bar and tab focus color */
 
