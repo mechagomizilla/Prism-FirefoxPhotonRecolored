@@ -12,7 +12,7 @@
   }
   
   #TabsToolbar[brighttext] .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]):not([multiselected]) {
-    background-color: rgba(32, 32, 39,.5) !important;
+    background-color: rgb(43,43,52) !important;
   }
   
   .findbar-find-previous, .findbar-find-next{
