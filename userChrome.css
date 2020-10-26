@@ -451,4 +451,20 @@
   :root:not([uidensity="compact"]) #back-button:active:not([disabled])>.toolbarbutton-icon {
     background-color: var(--toolbarbutton-active-background) !important;
   }
+  
+  /*Remove "update available" badge*/
+  
+  #PanelUI-menu-button[badge-status="update-available"],
+  #PanelUI-menu-button[badge-status="update-downloading"],
+  #PanelUI-menu-button[badge-status="update-manual"],
+  #PanelUI-menu-button[badge-status="update-restart"] {
+    list-style-image: url("chrome://browser/skin/menu.svg") !important;
+  }
+  
+  #PanelUI-menu-button[badge-status="update-available"] > .toolbarbutton-badge-stack > .toolbarbutton-badge,
+  #PanelUI-menu-button[badge-status="update-downloading"] > .toolbarbutton-badge-stack > .toolbarbutton-badge,
+  #PanelUI-menu-button[badge-status="update-manual"] > .toolbarbutton-badge-stack > .toolbarbutton-badge,
+  #PanelUI-menu-button[badge-status="update-restart"] > .toolbarbutton-badge-stack > .toolbarbutton-badge {
+    opacity: 0 !important;
+  }
 }
