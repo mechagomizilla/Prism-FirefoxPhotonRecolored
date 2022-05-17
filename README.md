@@ -1,5 +1,6 @@
 # Firefox Dark Theme Tweaks and Fixes
 Interface tweaks for Firefox Quantum
+
 *Broken in the Photon UI. Feel free to use elements from my theme if you want to mod the current UI. I am now using Vivaldi and I don't have the time to maintain a theme for a browser that I am not using anymore. You can actually theme Vivaldi's CSS too, so I will be doing that instead.*
 
 1. Type about:config in your url bar, search *toolkit.legacyUserProfileCustomizations.stylesheets* and set it to *true*.
