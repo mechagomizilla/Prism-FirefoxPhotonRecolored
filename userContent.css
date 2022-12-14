@@ -1,3 +1,70 @@
-@-moz-document url(about:home), url(about:newtab) {  
-    body{--newtab-background-color: rgb(43,43,52) !important;}
+/*******************************/
+/*  Web content customization  */
+/*******************************/
+
+/* Newtab page */
+@-moz-document url(about:newtab), url(about:home) {
+    body, body[lwt-newtab-brighttext] {
+        /* Background color */
+	    --newtab-background-color: #12121b !important;
+        --newtab-element-secondary-color: #12121b !important;
+        /* Accent color */
+	    --newtab-background-color-secondary: #350d27 !important;
+        /* Text */
+	    --newtab-text-primary-color: #fbfbfe !important;
+        --newtab-wordmark-color: #fbfbfe !important;
+        --newtab-primary-element-text-color: #2b2a33 !important;
+        /* Highlight */
+	    --newtab-primary-action-background: #aa0e80 !important;
+	    --newtab-primary-action-background-pocket: #aa0e80 !important;
+	    --newtab-primary-action-background-pocket-dimmed: rgba(170,14,128, .75) !important;
+        /* Hover */
+	    --newtab-primary-element-hover-color: rgba(170,14,128, .2) !important;
+	    --newtab-primary-element-hover-pocket-color: rgba(170,14,128, .2) !important;
+	    --newtab-element-hover-color: rgba(170,14,128, .1) !important; /* Keep at .1 transparency */
+	    --newtab-element-secondary-hover-color: rgba(170,14,128, .2) !important;
+        /* Active */
+        --newtab-element-active-color: rgba(170,14,128, .3) !important;
+	    --newtab-element-secondary-active-color: rgba(170,14,128, .3) !important;
+        /* Border */
+	    --newtab-border-color: #414148 !important;
+    }
+    /* Selection highlight */
+    ::-moz-selection {
+        background-color: rgba(170,14,128, .5) !important;
+    }
+    /* Active icon color */
+    .compact-cards .card-outer .card-context .card-context-icon.icon-bookmark-added {
+        fill: #aa0e80 !important;
+    }
 }
+
+/********************************************************
+TO DO
+/* Profiles 
+@-moz-document url-prefix(about:profiles) {
+        
+}
+
+/* Addons 
+@-moz-document url-prefix(about:addons),
+url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+    
+}
+
+/* Config 
+@-moz-document url-prefix(about:config) {
+
+}
+
+/* Logins 
+@-moz-document url-prefix(about:logins) {
+
+}
+
+/* Settings 
+@-moz-document url(about:preferences),url-prefix(about:preferences){
+
+}
+********************************************************/
