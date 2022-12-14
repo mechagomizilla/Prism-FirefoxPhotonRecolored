@@ -1,4 +1,4 @@
-# Firefox Photon Recolored
+# Prism - Firefox Photon Recolored
 The goal of this repo is to share my userChrome and userContent to help others in customizing Firefox's colors to their own image.
 
 For now, only the userChrome and the newtab page are complete, but I plan to customize prompts and other internal pages in the near future, maybe. I also plan on simplifying the process of setting the colors by converting it all to rgba and unifying the colors under a few master variables.
