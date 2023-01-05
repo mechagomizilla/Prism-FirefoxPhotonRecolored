@@ -127,6 +127,7 @@ menupopup {
     --panel-background: #12121b !important;
     --panel-color: #FBFBFE !important;
     --panel-border-color: #414148 !important;
+    --content-select-background-image: linear-gradient(#12121b, #12121b) !important;
 }
 menupopup > menuseparator {
     border-color: #414148 !important;
@@ -140,6 +141,15 @@ menupopup > menuitem[_moz-menuactive="true"][disabled],
 menupopup > menu[_moz-menuactive="true"][disabled],
 #context-navigation > menuitem[_moz-menuactive="true"][disabled] > .menu-iconic-left > .menu-iconic-icon {
     background-color: rgba(170,14,128, .1) !important;
+}
+menu:where([_moz-menuactive="true"]:not([disabled="true"])),
+menuitem:where([_moz-menuactive="true"]:not([disabled="true"])) {
+    background-color: rgba(170,14,128, .3) !important;
+    color: #FBFBFE !important;
+}
+menu:where([disabled="true"]), menuitem:where([disabled="true"]), menu:where([_moz-menuactive="true"][disabled="true"]), menuitem:where([_moz-menuactive="true"][disabled="true"]), #ContentSelectDropdown .ContentSelectDropdown-item-1:not([_moz-menuactive="true"]) {
+    color: var(--panel-disabled-color) !important;
+    background-color: var(--panel-background) !important;
 }
 
 /* Fix extension hover */
